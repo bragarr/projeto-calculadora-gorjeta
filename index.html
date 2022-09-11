@@ -4,8 +4,49 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style/reset.css"></link>
+        <link rel="stylesheet" href="./assets/style/style.css"></link>
         <title>Tip Calculator</title>
     </head>
     <body>
+        <main class="app__field">
+            <section class="calculator__body">
+                <article class="tip__settings">
+                    <fieldset class="tip__definitions">
+                        <h2 class="field__description">Bill</h2>
+                        <input type="text" placeholder="$" class="bill__field">
+                    </fieldset>
+                    <fieldset class="tip__definitions">
+                        <h2 class="field__description">Select Tip %</h2>
+                        <ul class="porcentagem__tip">
+                            <li class="opcao__porcentagem">5%</li>
+                            <li class="opcao__porcentagem">10%</li>
+                            <li class="opcao__porcentagem">15%</li>
+                            <li class="opcao__porcentagem">25%</li>
+                            <li class="opcao__porcentagem">50%</li>
+                            <li class="opcao__porcentagem"><input type="text" class="opcao__user" placeholder="%"></li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="tip__definitions number__people">
+                        <h2 class="field__description">Number of People</h2>
+                        <span class="message"></span>
+                        <input type="text" class="people__field">
+                    </fieldset>
+                </article>
+                <article class="tip__result">
+                    <div class="container__result">
+                        <h2 class="field__description">Tip Amount</h2>
+                        <h3 class="sub__text">/person</h3>
+                        <input type="text" class="app__result" placeholder="$0.00">
+                     </div>
+                     <div class="container__result">
+                        <h2 class="field__description">Tip Amount</h2>
+                        <h3 class="sub__text">/person</h3>
+                        <input type="text" class="app__result" placeholder="$0.00">
+                    </div>
+                    <button>RESET</button>
+                </article>
+            </section>
+        </main>
     </body>
 </html>

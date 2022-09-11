@@ -1,0 +1,81 @@
+.app__field {
+    display: block;
+    text-align: center;
+}
+
+.calculator__body {
+    display: grid;
+    grid-template-columns: 280px 280px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tip__settings {
+    margin: 0 10px;
+}
+
+.bill__field {
+    text-align: center;
+    width: 230px;
+}
+
+.field__description {
+    text-align: left;
+}
+
+.porcentagem__tip {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcao__porcentagem {
+    list-style-type: none;
+    background-color: blueviolet;
+    color: aliceblue;
+    margin: 2px;
+    font-size: 15px;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.opcao__user {
+    border: none;
+    box-shadow: 0;
+    outline: 0;
+    background-color: blueviolet;
+    padding: 0;
+    width: 30px;
+    text-align: right;
+    color: aliceblue;
+}
+
+.opcao__user:focus {
+    outline: 0;
+    box-shadow: 0;
+}
+
+.opcao__user::placeholder {
+    color: aliceblue;
+}
+
+.number__people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.field__description, .sub__tex {
+    grid-row: span 1;
+}
+
+.people__field {
+    grid-column: span 2;
+    text-align: center;
+    width: 230px;
+}
