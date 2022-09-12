@@ -1,5 +1,6 @@
 :root {
     --very-dark-cyan: hsl(183, 100%, 15%);
+    --strong-cyan: hsl(172, 67%, 45%);
     --dark-grayish-cyan : hsl(186, 14%, 43%);
     --Grayish-cyan : hsl(184, 14%, 56%);
     --light-grayish-cyan : hsl(185, 41%, 84%);
@@ -31,10 +32,16 @@ body {
 
 .tip__settings {
     width: 240px;
+    color: var(--dark-grayish-cyan);
+    font-size: 24px;
+}
+
+.bill {
+    padding: 15px 0;
 }
 
 .tip__definitions {
-
+    padding: 10px 0;
 }
 
 .field__description, .sub__text {
@@ -43,8 +50,16 @@ body {
 
 .bill__field, .people__field {
     width: 230px;
+    background-color: var(--Very-light-grayish-cyan);
+    text-align: right;
+    border: none;
 }
 
+.bill__field {
+    background-image: url(../img/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
 .field__description {
     text-align: left;
 }
@@ -60,11 +75,11 @@ body {
 
 .opcao__porcentagem {
     list-style-type: none;
-    background-color: blueviolet;
-    color: aliceblue;
+    background-color:  var(--very-dark-cyan);
+    color: var(--white);
     margin: 2px;
     font-size: 15px;
-    padding: 5px 0;
+    padding: 8px 0;
     border-radius: 5px;
 }
 
@@ -72,11 +87,11 @@ body {
     border: none;
     box-shadow: 0;
     outline: 0;
-    background-color: blueviolet;
+    background-color: var(--very-dark-cyan);
     padding: 0;
     width: 50px;
     text-align: right;
-    color: aliceblue;
+    color: var(--white);
 }
 
 .opcao__user:focus {
@@ -86,6 +101,8 @@ body {
 
 .opcao__user::placeholder {
     color: aliceblue;
+    text-align: center;
+    font-family: 'Space mono', sans-serif;
 }
 
 .field__description, .sub__tex {
@@ -93,8 +110,10 @@ body {
 }
 
 .people__field {
-    text-align: center;
     grid-column: span 2;
+    background-image: url(../img/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .sub__text {
@@ -115,4 +134,14 @@ body {
 
 .text__container, .result__values {
     padding: 15px;
+}
+
+.button__reset {
+    background-color: hsl(183, 100%, 12%);
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    width: 200px;
+    padding: 5px 0;
 }
