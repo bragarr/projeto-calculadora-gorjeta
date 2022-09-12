@@ -16,6 +16,10 @@ body {
     text-align: center;
 }
 
+.Main__logo {
+    margin: 50px 0;
+}
+
 .app__field {
     display: inline-block;
 }
@@ -34,6 +38,7 @@ body {
     width: 240px;
     color: var(--dark-grayish-cyan);
     font-size: 24px;
+    margin-right: 10px;
 }
 
 .bill {
@@ -46,6 +51,7 @@ body {
 
 .field__description, .sub__text {
     font-size: 10px;
+    margin: 5px 0;
 }
 
 .bill__field, .people__field {
@@ -53,6 +59,7 @@ body {
     background-color: var(--Very-light-grayish-cyan);
     text-align: right;
     border: none;
+    padding: 10px 0;
 }
 
 .bill__field {
@@ -79,28 +86,42 @@ body {
     color: var(--white);
     margin: 2px;
     font-size: 15px;
-    padding: 8px 0;
+    padding: 10px 0;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.custom {
+    background-color: var(--Very-light-grayish-cyan);
+    padding: 7px;
+    cursor: pointer;
 }
 
 .opcao__user {
     border: none;
     box-shadow: 0;
     outline: 0;
-    background-color: var(--very-dark-cyan);
-    padding: 0;
+    background-color: var(--Very-light-grayish-cyan);
     width: 50px;
+    color: var(--very-dark-cyan);
     text-align: right;
-    color: var(--white);
+    font-family: 'Space mono', sans-serif;
 }
 
 .opcao__user:focus {
     outline: 0;
     box-shadow: 0;
+    padding: 0;
+    cursor: pointer;
 }
 
 .opcao__user::placeholder {
-    color: aliceblue;
+    color: var(--dark-grayish-cyan);
     text-align: center;
     font-family: 'Space mono', sans-serif;
 }
@@ -124,6 +145,11 @@ body {
     background-color: var(--very-dark-cyan);
     border-radius: 10px;
     width: 240px;
+    margin-left: 10px;
+}
+
+.container__results {
+    padding: 10px 0;
 }
 
 .container__result {
@@ -136,12 +162,36 @@ body {
     padding: 15px;
 }
 
+.text__container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: left;
+    color: var(--white);
+}
+
+.sub__text {
+    color: var(--Grayish-cyan);
+}
+
+.result__values {
+    font-size: 36px;
+    color: var(--strong-cyan);
+}
+
 .button__reset {
     background-color: hsl(183, 100%, 12%);
     border: none;
     margin-top: 50px;
     margin-bottom: 20px;
-    border-radius: 2px;
+    border-radius: 5px;
     width: 200px;
-    padding: 5px 0;
+    padding: 10px 0;
+    color: var(--Grayish-cyan);
+    font-family: 'Space mono', sans-serif;
+    cursor: pointer;
+}
+
+.five__percent, .ten__percent, .ft__percent, .tf__percent, .ff__percent, .custom__percent {
+    display: none;
 }

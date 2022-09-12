@@ -13,7 +13,7 @@
     </head>
     <body>
         <main class="app__field">
-            <img src="./assets/img/logo.svg" alt="app Logo">
+            <img src="./assets/img/logo.svg" alt="app Logo" class="Main__logo">
             <section class="calculator__body">
                 <article class="tip__settings">
                     <fieldset class="tip__definitions bill">
@@ -23,12 +23,12 @@
                     <fieldset class="tip__definitions">
                         <h2 class="field__description">Select Tip %</h2>
                         <ul class="porcentagem__tip">
-                            <li class="opcao__porcentagem">5%</li>
-                            <li class="opcao__porcentagem">10%</li>
-                            <li class="opcao__porcentagem">15%</li>
-                            <li class="opcao__porcentagem">25%</li>
-                            <li class="opcao__porcentagem">50%</li>
-                            <li class="opcao__porcentagem"><input type="text" class="opcao__user" placeholder="custom"></li>
+                            <li class="opcao__porcentagem "><input type="checkbox" class="five__percent">5%</li>
+                            <li class="opcao__porcentagem"><input type="checkbox" class="ten__percent">10%</li>
+                            <li class="opcao__porcentagem"><input type="checkbox" class="ft__percent">15%</li>
+                            <li class="opcao__porcentagem"><input type="checkbox" class="tf__percent">25%</li>
+                            <li class="opcao__porcentagem"><input type="checkbox" class="ff__percent">50%</li>
+                            <li class="opcao__porcentagem custom"><input type="checkbox" class="custom__percent"><input type="text" class="opcao__user" placeholder="custom"></li>
                         </ul>
                     </fieldset>
                     <fieldset class="tip__definitions number__people">
@@ -38,19 +38,21 @@
                     </fieldset>
                 </article>
                 <article class="tip__result">
-                    <div class="container__result">
-                        <div class="text__container">
-                            <h2 class="field__description">Tip Amount</h2>
-                            <h3 class="sub__text">/person</h3>
+                    <div class="container__results">
+                        <div class="container__result">
+                            <div class="text__container">
+                                <h2 class="field__description">Tip Amount</h2>
+                                <h3 class="sub__text">/person</h3>
+                            </div>
+                            <span class="result__values">$0.00</span>
                         </div>
-                        <span class="result__values">$0.00</span>
-                     </div>
-                     <div class="container__result">
-                        <div class="text__container">
-                            <h2 class="field__description">Total</h2>
-                            <h3 class="sub__text">/person</h3>
+                        <div class="container__result">
+                            <div class="text__container">
+                                <h2 class="field__description">Total</h2>
+                                <h3 class="sub__text">/person</h3>
+                            </div>
+                            <span class="result__values">$0.00</span>
                         </div>
-                        <span class="result__values">$0.00</span>
                     </div>
                     <button class="button__reset">RESET</button>
                 </article>
