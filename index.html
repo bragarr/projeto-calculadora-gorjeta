@@ -6,10 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/style/reset.css"></link>
         <link rel="stylesheet" href="./assets/style/style.css"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
         <title>Tip Calculator</title>
     </head>
     <body>
         <main class="app__field">
+            <P>SPLI</P>
+            <P>TTER</P>
             <section class="calculator__body">
                 <article class="tip__settings">
                     <fieldset class="tip__definitions">
@@ -24,7 +29,7 @@
                             <li class="opcao__porcentagem">15%</li>
                             <li class="opcao__porcentagem">25%</li>
                             <li class="opcao__porcentagem">50%</li>
-                            <li class="opcao__porcentagem"><input type="text" class="opcao__user" placeholder="%"></li>
+                            <li class="opcao__porcentagem"><input type="text" class="opcao__user" placeholder="custom"></li>
                         </ul>
                     </fieldset>
                     <fieldset class="tip__definitions number__people">
@@ -35,14 +40,18 @@
                 </article>
                 <article class="tip__result">
                     <div class="container__result">
-                        <h2 class="field__description">Tip Amount</h2>
-                        <h3 class="sub__text">/person</h3>
-                        <input type="text" class="app__result" placeholder="$0.00">
+                        <div class="text__container">
+                            <h2 class="field__description">Tip Amount</h2>
+                            <h3 class="sub__text">/person</h3>
+                        </div>
+                        <span class="result__values">$0.00</span>
                      </div>
                      <div class="container__result">
-                        <h2 class="field__description">Tip Amount</h2>
-                        <h3 class="sub__text">/person</h3>
-                        <input type="text" class="app__result" placeholder="$0.00">
+                        <div class="text__container">
+                            <h2 class="field__description">Total</h2>
+                            <h3 class="sub__text">/person</h3>
+                        </div>
+                        <span class="result__values">$0.00</span>
                     </div>
                     <button>RESET</button>
                 </article>

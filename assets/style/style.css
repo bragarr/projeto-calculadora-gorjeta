@@ -1,21 +1,47 @@
-.app__field {
-    display: block;
+:root {
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan : hsl(186, 14%, 43%);
+    --Grayish-cyan : hsl(184, 14%, 56%);
+    --light-grayish-cyan : hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan : hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+body {
+    font-family: 'Space mono', sans-serif;
+    font-weight: 700;
+    background-color: var(--light-grayish-cyan);
     text-align: center;
+}
+
+.app__field {
+    display: inline-block;
 }
 
 .calculator__body {
-    display: grid;
-    grid-template-columns: 280px 280px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: var(--white);
+    padding: 15px 15px;
+    border-radius: 10px;
 }
 
 .tip__settings {
-    margin: 0 10px;
+    width: 240px;
 }
 
-.bill__field {
-    text-align: center;
+.tip__definitions {
+
+}
+
+.field__description, .sub__text {
+    font-size: 10px;
+}
+
+.bill__field, .people__field {
     width: 230px;
 }
 
@@ -48,7 +74,7 @@
     outline: 0;
     background-color: blueviolet;
     padding: 0;
-    width: 30px;
+    width: 50px;
     text-align: right;
     color: aliceblue;
 }
@@ -62,20 +88,31 @@
     color: aliceblue;
 }
 
-.number__people {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-}
-
 .field__description, .sub__tex {
     grid-row: span 1;
 }
 
 .people__field {
-    grid-column: span 2;
     text-align: center;
-    width: 230px;
+    grid-column: span 2;
+}
+
+.sub__text {
+    text-align: left;
+}
+
+.tip__result {
+    background-color: var(--very-dark-cyan);
+    border-radius: 10px;
+    width: 240px;
+}
+
+.container__result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text__container, .result__values {
+    padding: 15px;
 }
