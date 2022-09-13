@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+        <script src="./tip.js" defer></script>
         <title>Tip Calculator</title>
     </head>
     <body>
@@ -23,17 +24,19 @@
                     <fieldset class="tip__definitions">
                         <h2 class="field__description">Select Tip %</h2>
                         <ul class="porcentagem__tip">
-                            <li class="opcao__porcentagem "><input type="checkbox" class="five__percent">5%</li>
-                            <li class="opcao__porcentagem"><input type="checkbox" class="ten__percent">10%</li>
-                            <li class="opcao__porcentagem"><input type="checkbox" class="ft__percent">15%</li>
-                            <li class="opcao__porcentagem"><input type="checkbox" class="tf__percent">25%</li>
-                            <li class="opcao__porcentagem"><input type="checkbox" class="ff__percent">50%</li>
-                            <li class="opcao__porcentagem custom"><input type="checkbox" class="custom__percent"><input type="text" class="opcao__user" placeholder="custom"></li>
+                            <li class="opcao__porcentagem"><input type="radio" name="user__choice" class="percent" data-value="0.05" id="five">5%</li>
+                            <li class="opcao__porcentagem"><input type="radio" name="user__choice" class="percent" data-value="0.1" id="ten">10%</li>
+                            <li class="opcao__porcentagem"><input type="radio" name="user__choice" class="percent" data-value="0.15" id="ft">15%</li>
+                            <li class="opcao__porcentagem"><input type="radio" name="user__choice" class="percent" data-value="0.25" id="tf">25%</li>
+                            <li class="opcao__porcentagem"><input type="radio" name="user__choice" class="percent" data-value="0.50"id="fift">50%</li>
+                            <li class="opcao__porcentagem custom"><input type="radio" name="user__choice" class="percent" data-value="70" id="cus"><input type="text" class="opcao__user" placeholder="custom"></li>
                         </ul>
                     </fieldset>
                     <fieldset class="tip__definitions number__people">
-                        <h2 class="field__description">Number of People</h2>
-                        <span class="message"></span>
+                        <div class="message__field">
+                            <h2 class="field__description">Number of People</h2>
+                            <span class="message"></span>
+                        </div>
                         <input type="text" class="people__field">
                     </fieldset>
                 </article>
@@ -44,14 +47,14 @@
                                 <h2 class="field__description">Tip Amount</h2>
                                 <h3 class="sub__text">/person</h3>
                             </div>
-                            <span class="result__values">$0.00</span>
+                            <span class="result__values per__person">$0.00</span>
                         </div>
                         <div class="container__result">
                             <div class="text__container">
                                 <h2 class="field__description">Total</h2>
                                 <h3 class="sub__text">/person</h3>
                             </div>
-                            <span class="result__values">$0.00</span>
+                            <span class="result__values per__total">$0.00</span>
                         </div>
                     </div>
                     <button class="button__reset">RESET</button>
