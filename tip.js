@@ -154,13 +154,7 @@ function checkCaixaCustom() {
     })
 }
 
-selecaoOpcao.forEach(botao => {
-    if(botao.checked === true) {
-        document.addEventListener("change", calculo());
-    }
-})
-
-
+//Função para não deixar mais de um botao ativo
 function naoDeixaMaisDeUmBotaoSelecionado() {
     opcaoPorcentagem.forEach(botao => {
         if(botao.classList.contains("selected")) {
