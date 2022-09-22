@@ -100,15 +100,27 @@ body {
     user-select: none;
 }
 
-.selected {
-    background-color: var(--light-grayish-cyan);
+.opcao__porcentagem:hover {
+    background-color: var(--strong-cyan);
     color: var(--very-dark-cyan);
+}
+
+
+.selected {
+    background-color: var(--strong-cyan);
+    color: var(--light-grayish-cyan);
 }
 
 .custom {
     background-color: var(--Very-light-grayish-cyan);
     padding: 7px;
     cursor: pointer;
+}
+
+.custom:hover {
+    outline: 2px solid var(--strong-cyan);
+    background-color: var(--Very-light-grayish-cyan);
+    color: var(--very-dark-cyan);
 }
 
 .custom__selected {
@@ -161,6 +173,18 @@ body {
     background-image: url(../img/icon-person.svg);
     background-repeat: no-repeat;
     background-position: left;
+}
+
+.incorrect {
+    outline: 2px solid red;
+}
+
+.incorrect:focus {
+    outline: 2px solid red;
+}
+
+.incorrect:hover {
+    outline: 2px solid red;
 }
 
 .sub__text {
@@ -225,4 +249,15 @@ body {
 
 .percent {
     display: none;
+}
+
+@media screen and (max-width: 580px) {
+    .Main__logo {
+        margin: 40px 0;
+    }
+
+    .calculator__body {
+        flex-direction: column;
+        margin: 20px 0 40px 0;
+    }
 }
