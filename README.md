@@ -32,20 +32,13 @@ O Primeiro passo é: Preencher os campos de valor da conta e quantidade de pesso
 ![image](https://user-images.githubusercontent.com/108424896/191644799-d25b5eae-9de8-4ee1-b3fe-816805b3cdb1.png)
 
 O Segundo passo é: Selecionar a porcentagem da gorjeta.
-
 ![image](https://user-images.githubusercontent.com/108424896/191644833-611cf769-257c-488d-a417-afdec245a33e.png)
 
-
 Por padrão a calculadora oferece 5 opções e permite que o usuário insira uma opção customizada se não encontrar a porcentagem na pre-definição estabelecida.
-
 Caso o usuário escolha a customizada, após todo o preenchimente, o mesmo deve clicar novamente em cima do campo onde realizou o preenchimento da quantidade personalizada.
-
 ![image](https://user-images.githubusercontent.com/108424896/191644868-d856f74f-e4fa-48d1-89ff-4fc723a2aa08.png)
 
-
 O Cálculo é executado toda vez que determinada opção de porcentagem é clicada. Caso o usuário clique antes de preencher todos os campos, um alerta fica evidente para que o mesmo revise todas as informações.
-
 ![image](https://user-images.githubusercontent.com/108424896/191644897-2b8bfa71-7ec3-492b-805a-b88c13550812.png)
 
 ![image](https://user-images.githubusercontent.com/108424896/191644929-28c1498f-c12e-494d-a5f7-a80758becd2c.png)
-
