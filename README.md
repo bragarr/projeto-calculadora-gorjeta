@@ -27,12 +27,12 @@ Para usufruir da calculadora é bem simples
 
 O Primeiro passo é: Preencher os campos de valor da conta e quantidade de pessoas. Esses campos são facilmente identificáveis através das pequenas imagens presentes no interior do campo de preenchimento. (Valor é identificado com $ e o campo de pessoas é identificado com o símbolo de perfil)
 
-![image](https://user-images.githubusercontent.com/108424896/191644743-1e632137-318d-4366-abc2-0cc0b76029ec.png)
+![image](https://user-images.githubusercontent.com/108424896/191645599-e1c73172-9f23-4f77-b946-20e9f54eb914.png)
 
-![image](https://user-images.githubusercontent.com/108424896/191644799-d25b5eae-9de8-4ee1-b3fe-816805b3cdb1.png)
+![image](https://user-images.githubusercontent.com/108424896/191645662-a0860daa-5055-4a39-ab40-0c2baffbc3c5.png)
 
 O Segundo passo é: Selecionar a porcentagem da gorjeta.
-![image](https://user-images.githubusercontent.com/108424896/191644833-611cf769-257c-488d-a417-afdec245a33e.png)
+![image](https://user-images.githubusercontent.com/108424896/191645713-b6e6c770-d134-462c-af24-d1479799c7f4.png)
 
 Por padrão a calculadora oferece 5 opções e permite que o usuário insira uma opção customizada se não encontrar a porcentagem na pre-definição estabelecida.
 Caso o usuário escolha a customizada, após todo o preenchimente, o mesmo deve clicar novamente em cima do campo onde realizou o preenchimento da quantidade personalizada.
