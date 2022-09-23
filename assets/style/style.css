@@ -260,4 +260,10 @@ body {
         flex-direction: column;
         margin: 20px 0 40px 0;
     }
+    .tip__result {
+        margin-left: 0;
+    }
+    .tip__settings {
+        margin-right: 0;
+    }
 }
